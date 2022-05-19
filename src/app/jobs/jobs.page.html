@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color:rgb(0, 208, 255); text-align: center;">Jobs</ion-title>
+    <ion-icon style="float:right;  font-size: 25px;"routerLink="/profile" routerDirection="root" name="person-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  <ion-card *ngFor ="let item of jobs" >
+    <ion-item>
+      <div class="flex-container">
+        <div class="flex-top">
+          <ion-label><b style="color:blue;">{{item.jobid}}</b> </ion-label>
+          <ion-label> <a style="color:rgb(213, 127, 74);">{{item.package}}</a></ion-label>
+          <div *ngIf="item.premium === true">
+            <ion-icon name='bookmark'></ion-icon>
+          </div>
+        </div>
+        
+        <div class="flex-bottom">
+          <ion-label class="flex-color">{{item.role}}</ion-label>
+          <ion-label class="flex-color ">{{item.technologies}}</ion-label>
+          <ion-label class="flex-color" >{{item.company}}</ion-label>
+        </div>
+       
+
+
+        
+        <div class="flex-bottom">
+          <ion-icon name='location'></ion-icon><ion-label>{{item.location}}</ion-label>
+          <ion-label>{{item.Exp}} </ion-label>
+          <ion-label>{{item.education}} </ion-label>
+        </div>
+      </div>
+    </ion-item>
+    <ion-card-content>
+      {{item.companydesc}}
+    </ion-card-content>
+  </ion-card>  
+</ion-content>

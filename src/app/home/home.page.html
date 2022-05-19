@@ -1,20 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-padding ion-text-center">
+  <div class="logo">
+    <img src='https://timesnext.com/wp-content/uploads/2020/04/naukri.png'>
+  </div><br><br>
+  
+  <div class="form">
+    <ion-item lines='none'>
+      <ion-input [{ngModel)]='email' placeholder='Enter email'></ion-input>
+    </ion-item><br>
+
+    <ion-item lines='none'>
+      <ion-input [{ngmodel)]='password' placeholder='password' type='password'></ion-input>
+    </ion-item><br>
+    <ion-button color='dark' expand='block' routerLink="/jobs" routerDirection="root">Login</ion-button>
+    <ion-button color='dark' expand='block' routerLink="/register" routerDirection="root">Register</ion-button>
   </div>
+  <ion-button fill='clear'  routerLink="/forgotpassword" routerDirection="root" >Forgot Password</ion-button>
 </ion-content>
+

@@ -1,0 +1,44 @@
+[
+
+    {
+        "jobid":"Developer",
+        "role":"Intern",
+        "package":"Rs 1-1.5 LPA",
+        "technologies":"html,css",
+        "company":"Progression",
+        "location":"Hyd",
+        "Exp":"1 years",
+        "education":"Btech",
+        "companydesc":"We expect our employees to be adaptive and ambicious",
+        "premium":true
+    
+    },
+    {
+        "jobid":"Manager",
+        "role":"Developer",
+        "package":"Rs 10-12 LPA",
+        "technologies":"Full Stack Developer",
+        "company":"Wipro",
+        "location":"Chennai",
+        "Exp":"5 years",
+        "education":"M.Tech",
+        "companydesc":"We expect a person who can lead the team and make our company brigther",
+        "premium":true
+    
+    },
+    {
+        "jobid":"Tester",
+        "role":"Testing Department",
+        "package":"RS 5-7LPA",
+        "technologies":"Cyber security",
+        "company":"Virtusa",
+        "location":"Mumbai",
+        "Exp":"3 years",
+        "education":"B.Tech",
+        "companydesc":"We are looking for an experienced tester in our testing teams who boosts the speed",
+        "premium":false
+    
+    }
+    ]
+    
+    
